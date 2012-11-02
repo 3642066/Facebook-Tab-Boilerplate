@@ -1,0 +1,16 @@
+{
+  "platform_features": {
+    "social_plugins": [
+      "like",
+      "activity",
+      "recommendations",
+      "comments"
+    ]
+  },
+  "platforms": [
+    "web"
+  ],
+  "sdks": {
+    "javascript": "0"
+  },
+}
