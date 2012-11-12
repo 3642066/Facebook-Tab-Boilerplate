@@ -1,20 +1,20 @@
 {
-  "platform_features": [
+  "platform_features": {
     "social_plugins": [
       "like",
       "activity",
       "recommendations",
       "comments"
     ]
-  ],
+  },
   "platforms": [
     "web"
   ],
   "sdks": {
     "javascript": "0"
-  }
+  },
   "screenshots": [
-      "screenshots/sample_wine_friends_1.jpg"
+    "screenshots/sample_wine_friends_1.jpg"
   ],
   "tutorial": "",
   "featured": 1,
