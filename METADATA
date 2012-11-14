@@ -1,4 +1,5 @@
 {
+  "name": "Wine Friends",
   "platform_features": {
     "social_plugins": [
       "like",
@@ -11,7 +12,7 @@
     "web"
   ],
   "sdks": {
-    "javascript": "0"
+    "javascript": "671604"
   },
   "screenshots": [
     "screenshots/sample_wine_friends_1.png"
