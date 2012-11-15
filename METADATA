@@ -1,23 +1,42 @@
 {
-  "name": "Wine Friends",
-  "platform_features": {
-    "social_plugins": [
-      "like",
-      "activity",
-      "recommendations",
-      "comments"
-    ]
-  },
+  "title": "Wine Friends",
+  "platform_features": [
+    {
+      "feature_group": "social_plugins",
+      "features": [
+        {
+          "name": "like"
+        },
+        {
+          "name": "recent_activity"
+        },
+        {
+          "name": "comments"
+        }
+      ]
+    }
+  ],
   "platforms": [
-    "web"
+    {
+      "name": "html"
+    }
   ],
-  "sdks": {
-    "javascript": "671604"
-  },
+  "sdks": [
+    {
+      "name": "javascript",
+      "version": "671604"
+    }
+  ],
   "screenshots": [
-    "screenshots/sample_wine_friends_1.png"
+    {
+      "url": "screenshots/sample_wine_friends_1.png"
+    }
   ],
-  "tutorial": "",
-  "featured": 1,
-  "deprecated": 0
+  "tutorial": [
+    {
+      "url": "https://github.com/fbsamples/web-winefriends/blob/master/README.md"
+    }
+  ],
+  "featured": false,
+  "deprecated": false
 }
