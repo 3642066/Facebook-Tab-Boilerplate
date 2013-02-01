@@ -29,12 +29,10 @@
   ],
   "screenshots": [
     {
-      "url": "screenshots/sample_wine_friends_1.png"
+      "path": "screenshots/sample_wine_friends_1.png"
     }
   ],
-  "tutorial": {
-    "url": "https://github.com/fbsamples/web-winefriends/blob/master/README.md"
-  },
+  "tutorial": "https://github.com/fbsamples/web-winefriends/blob/master/README.md",
   "featured": false,
   "deprecated": false
 }
