@@ -56,7 +56,14 @@ $.getJSON(fburl, function(data){
         <div id="logo">
           <img src="http://graph.facebook.com/amplabh/picture?width=260" >
         </div>
-        
+         <ul>
+        <button class="menu-item" onclick="openPage('Login');">Login</button>
+        <li class="menu-item" onclick="openPage('Requests');">Requests</li>
+        <li class="menu-item" onclick="openPage('News-Feed');">News Feed</li>
+        <li class="menu-item" onclick="openPage('Graph-API');">Graph API</li>
+        <li class="menu-item" onclick="openPage('Credits');" id="credits-button">Credits</li>
+        <!-- <li class="menu-item" onclick="openPage('Social-Plugins');">Social Plugins</li> --> 
+        </ul>
         <button style="width:100%">Primeiro botão</button>
         <h2>Atividades</h2>
         <div class="facebook-plugin">
@@ -85,7 +92,16 @@ $.getJSON(fburl, function(data){
 
 </div>
         
-        
+         <!-- Page: Requests -->
+  <div id="page-Requests" class="page"> 
+    <p id="main-desc">
+      Requests allows the user to invite their friends to the app, or to re-engage their friends so they come back to your app.  
+      Friends receive requests in Notifications on Facebook.
+      <br /><br />
+      <strong>Check out the mobile web app tutorial at <a href="http://developers.facebook.com/docs/mobile/web/build//">developers.facebook.com/docs/mobile/web/build/</a></strong>
+    </p>
+    
+  </div>
         <h2>Mapa</h2>
         
         <iframe width="520" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Ampla+Motos+-+Avenida+do+Contorno,+Belo+Horizonte+-+Minas+Gerais,+Brazil&amp;aq=0&amp;oq=Ampla+Moto&amp;sll=-19.919191,-43.944647&amp;sspn=0.010026,0.021007&amp;ie=UTF8&amp;hq=Ampla+Motos+-&amp;hnear=Av.+do+Contorno,+Belo+Horizonte+-+Minas+Gerais,+Brazil&amp;t=m&amp;ll=-19.917597,-43.926687&amp;spn=0.016946,0.044546&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
