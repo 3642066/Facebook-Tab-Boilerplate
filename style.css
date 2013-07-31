@@ -84,7 +84,7 @@ body {
 #container {
   position: relative;
   margin: 0px auto;
-  width: 900px;
+  width: 810px;
 }
 
 #left-sidebar {
@@ -112,7 +112,7 @@ body {
 
 #right-sidebar {
   float: left;
-  width: 610px;
+  width: 520px;
   padding-top: 25px;
 }
 
