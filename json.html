@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo by 3642066</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
+
+$.getJSON(fburl, function(data){
+
+     var name = data["name"];
+     $("#pagina").append("<h3>"+name+"</h3>");
+     var id = data["id"];
+     $("#pagina").append("<h3>"+id+"</h3>");
+  
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <div id="pagina"></div>
+  
+</body>
+
+
+</html>
+
