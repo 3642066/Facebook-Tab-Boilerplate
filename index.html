@@ -9,7 +9,10 @@
   <meta property="og:site_name" content="winefriends"/>
   <meta property="fb:app_id" content="20901205"> <!-- Replace app id with your own-->
   <meta property="og:description" content="Share a story and enjoy a glass of wine."/>
-<link type="text/css" rel="stylesheet" href="style.css">
+
+  <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+
+  <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="fb-root"></div>
@@ -26,6 +29,22 @@
       document.getElementById('fb-root').appendChild(e);
     }());
   </script>
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
+
+$.getJSON(fburl, function(data){
+
+     var name = data["name"];
+     $("#pagina").append("<h3>"+name+"</h3>");
+     var id = data["id"];
+     $("#pagina").append("<h3>"+id+"</h3>");
+  
+});
+});//]]>  
+
+</script>
 
   <div id="header">
     <div id="container">
@@ -50,6 +69,9 @@
       </div>
       <div id="right-sidebar">
         <h1>Story Bar</h1>
+        
+          <div id="pagina"></div>
+        
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
