@@ -14,21 +14,7 @@
 
   <link type="text/css" rel="stylesheet" href="style.css">
   
-  <script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
-
-$.getJSON(fburl, function(data){
-
-     var name = data["name"];
-     $("#pagina").append("<h3>"+name+"</h3>");
-     var id = data["id"];
-     $("#pagina").append("<h3>"+id+"</h3>");
   
-});
-});//]]>  
-
-</script>
 </head>
 <body>
   <div id="fb-root"></div>
