@@ -12,7 +12,7 @@
   <meta property="og:description" content="Share a story and enjoy a glass of wine."/>
   <link type="text/css" rel="stylesheet" href="style.css" />
   <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
-<script type='text/javascript'>
+<script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
 var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
 
@@ -24,7 +24,8 @@ $.getJSON(fburl, function(data){
      $("#pagina").append("<h3>"+id+"</h3>");
   
 });
-});  
+});//]]>  
+
 </script>
   <style type='text/css'>
     .content2 {
@@ -46,19 +47,16 @@ $(document).ready(function(){
 //]]>  
 
 </script>
+ <style type='text/css'>
+    .content {
+    display: none;
+}
+
+  </style>
 </head>
 <body>
-<div id="menu">
-    <a href="one.html" rel="one">One content</a> |
-    <a href="two.html" rel="two">Two content</a> |
-    <a href="three.html" rel="three">Three content</a>
-</div>
-<div id="main2">
-Nothing here yet.
-</div>
-<div id="one" class="content2">This is div#one content.</div>
-<div id="two" class="content2">This is div#two content.</div>
-<div id="three" class="content2">This is div#three content.</div>
+
+
 
 <div id="fb-root"></div>
   <script>
@@ -89,7 +87,14 @@ Nothing here yet.
           <img src="http://graph.facebook.com/amplabh/picture?width=260" >
         </div>
         
-        
+          <div id="menu">
+    <a href="one.html" rel="one">One content</a> <br>
+    <a href="two.html" rel="two">Two content</a> <br>
+    <a href="three.html" rel="three">Three content</a> <br>
+    <a href="four.html" rel="four">Four content</a> <br>
+    <a href="five.html" rel="five">Five content</a> <br>
+    <a href="six.html" rel="six">Six content</a> <br>
+</div>
         <button style="width:100%">Primeiro botão</button>
         <h2>Atividades</h2>
         <div class="facebook-plugin">
@@ -98,17 +103,21 @@ Nothing here yet.
         
         </div>
 
-        <h2>Recommendations</h2>
+        <h2>Recomendações</h2>
         <div class="facebook-plugin">
         <div class="fb-recommendations" data-site="http://amplamotos.vectornet.com.br/"  data-width="260" data-height="400" data-header="true"></div>
         </div>
       </div>
       <div id="right-sidebar">
 
-      
       <h1>Interagindo com o website</h1>
-                
-        <div class="facebook-plugin">
+     
+     <div id="main">
+Nothing here yet.
+</div>
+<div id="one" class="content">
+CONTEUDO DO MENU 1
+<div class="facebook-plugin">
         <h2>Página principal</h2>
 <div class="fb-like" data-href="http://amplamotos.vectornet.com.br/" data-width="520" data-show-faces="true" data-send="true"></div>
 
@@ -119,7 +128,10 @@ Nothing here yet.
 <div class="fb-like" data-href="http://amplamotos.vectornet.com.br/contato/" data-width="520" data-show-faces="true" data-send="true"></div>
 
 </div>
-        
+</div>
+<div id="two" class="content">
+CONTEÚDO DO MENU 2
+
         <h2>Mapa</h2>
         
         <iframe width="520" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Ampla+Motos+-+Avenida+do+Contorno,+Belo+Horizonte+-+Minas+Gerais,+Brazil&amp;aq=0&amp;oq=Ampla+Moto&amp;sll=-19.919191,-43.944647&amp;sspn=0.010026,0.021007&amp;ie=UTF8&amp;hq=Ampla+Motos+-&amp;hnear=Av.+do+Contorno,+Belo+Horizonte+-+Minas+Gerais,+Brazil&amp;t=m&amp;ll=-19.917597,-43.926687&amp;spn=0.016946,0.044546&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
@@ -133,11 +145,20 @@ Nothing here yet.
             <img src="http://maps.google.com/maps/api/staticmap?center=-19.919143,-43.938583&zoom=2&size=610x150&maptype=roadmap&markers=color:red|color:red|label:C|-19.919143,-43.938583&sensor=false" width="520px" />
           </a>
         </div>
-        
-        
-        <h2>Comentários</h2>
+
+</div>
+<div id="three" class="content">
+CONTEUDO DO MENU 3
+ <h2>Comentários</h2>
       <fb:comments url="http://www.facebook.com/amplabh/" width="520px" height="700px" simple="1" css="http://www.hsiet.com/winery/style.css"></fb:comments>
-      </div>
+     
+</div>
+           
+        
+        
+        
+        
+        </div>
     </div>
   </div> 
 <div id="footer">
