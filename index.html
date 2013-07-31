@@ -32,6 +32,20 @@ $.getJSON(fburl, function(data){
 }
 
   </style>
+  <script type='text/javascript'>//<![CDATA[ 
+
+$(document).ready(function(){    
+    $('#menu a').click(function(){
+        var id = this.rel;
+        $('#main').empty().append($('#'+id).html());
+        return false;
+    });
+
+    $('#menu a:eq(0)').click();
+});
+//]]>  
+
+</script>
 </head>
 <body>
   <div id="fb-root"></div>
