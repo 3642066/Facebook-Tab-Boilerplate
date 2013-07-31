@@ -11,7 +11,21 @@
   <meta property="og:description" content="Share a story and enjoy a glass of wine."/>
   <link type="text/css" rel="stylesheet" href="style.css" />
   <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
 
+$.getJSON(fburl, function(data){
+
+     var name = data["name"];
+     $("#pagina").append("<h3>"+name+"</h3>");
+     var id = data["id"];
+     $("#pagina").append("<h3>"+id+"</h3>");
+  
+});
+});//]]>  
+
+</script>
 </head>
 <body>
   <div id="fb-root"></div>
@@ -60,6 +74,8 @@
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
+        
+        
         <h2>Map</h2>
         <div id="address">
           <a href="http://maps.google.com/maps?f=q&hl=en&q=34.14442,-114.285441" target="_blank">1601 S. California Ave. Palo Alto, CA</a>
