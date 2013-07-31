@@ -1,41 +1,55 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title> - jsFiddle demo by 3642066</title>
+  <title> - jsFiddle demo</title>
   
-  <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
   <link rel="stylesheet" type="text/css" href="/css/normalize.css">
   
   
   <link rel="stylesheet" type="text/css" href="/css/result-light.css">
   
   <style type='text/css'>
-    
+    .content {
+    display: none;
+}
+
   </style>
   
 
 
 <script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-var fburl = "http://graph.facebook.com/programadonobrasil?callback=?"
 
-$.getJSON(fburl, function(data){
+$(document).ready(function(){    
+    $('#menu a').click(function(){
+        var id = this.rel;
+        $('#main').empty().append($('#'+id).html());
+        return false;
+    });
 
-     var name = data["name"];
-     $("#pagina").append("<h3>"+name+"</h3>");
-     var id = data["id"];
-     $("#pagina").append("<h3>"+id+"</h3>");
-  
+    $('#menu a:eq(0)').click();
 });
-});//]]>  
+//]]>  
 
 </script>
 
 
 </head>
 <body>
-  <div id="pagina"></div>
+  <div id="menu">
+    <a href="one.html" rel="one">One content</a> |
+    <a href="two.html" rel="two">Two content</a> |
+    <a href="three.html" rel="three">Three content</a>
+</div>
+<div id="main">
+Nothing here yet.
+</div>
+<div id="one" class="content">This is div#one content.</div>
+<div id="two" class="content">This is div#two content.</div>
+<div id="three" class="content">This is div#three content.</div>
+
   
 </body>
 
